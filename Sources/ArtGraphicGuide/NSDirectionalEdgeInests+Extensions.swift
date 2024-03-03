@@ -23,20 +23,22 @@ public extension NSDirectionalEdgeInsets {
         self.init(top: top, leading: leading, bottom: bottom, trailing: trailing)
     }
     
-    static func insets(margin: CGFloat) -> NSDirectionalEdgeInsets {
-        NSDirectionalEdgeInsets(top: margin, leading: margin, bottom: -margin, trailing: -margin)
+    static func insets(margin: CGFloat, symmetric: Bool = false) -> NSDirectionalEdgeInsets {
+        let symbol: CGFloat = symmetric ? -1 : 1
+        return NSDirectionalEdgeInsets(top: margin, leading: margin, bottom: margin * symbol, trailing: margin * symbol)
     }
     
-    static func insets(horizontal: CGFloat, vertical: CGFloat) -> NSDirectionalEdgeInsets {
-        NSDirectionalEdgeInsets(top: vertical, leading: horizontal, bottom: -vertical, trailing: -horizontal)
+    static func insets(horizontal: CGFloat, vertical: CGFloat, symmetric: Bool = false) -> NSDirectionalEdgeInsets {
+        let symbol: CGFloat = symmetric ? -1 : 1
+        return NSDirectionalEdgeInsets(top: vertical, leading: horizontal, bottom: vertical * symbol, trailing: horizontal * symbol)
     }
     
-    static func insets(horizontal: CGFloat) -> NSDirectionalEdgeInsets {
-        insets(horizontal: horizontal, vertical: 0)
+    static func insets(horizontal: CGFloat, symmetric: Bool = false) -> NSDirectionalEdgeInsets {
+        insets(horizontal: horizontal, vertical: 0, symmetric: symmetric)
     }
     
-    static func insets(vertical: CGFloat) -> NSDirectionalEdgeInsets {
-        insets(horizontal: 0, vertical: vertical)
+    static func insets(vertical: CGFloat, symmetric: Bool = false) -> NSDirectionalEdgeInsets {
+        insets(horizontal: 0, vertical: vertical, symmetric: symmetric)
     }
 
 }
