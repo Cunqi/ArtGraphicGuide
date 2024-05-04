@@ -4,6 +4,6 @@ import XCTest
 final class ArtGraphicGuideTests: XCTestCase {
     
     func testValueEquals() {
-        XCTAssertTrue(AGGSpacing.oneX == 8.0)
+        XCTAssertTrue(ARTSpacing.oneX == 8.0)
     }
 }

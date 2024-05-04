@@ -7,14 +7,14 @@
 
 import Foundation
 
-public class AGGShape {
+public class ARTShape {
     
-    public static let cornerRadiusSmall = AGGSpacing.halfX
+    public static let cornerRadiusSmall = ARTSpacing.halfX
     
-    public static let cornerRadiusMedium = AGGSpacing.oneX
+    public static let cornerRadiusMedium = ARTSpacing.oneX
     
-    public static let cornerRadiusLarge = AGGSpacing.twoX
+    public static let cornerRadiusLarge = ARTSpacing.twoX
     
-    public static let cornerRadiusExtraLarge = AGGSpacing.threeX
+    public static let cornerRadiusExtraLarge = ARTSpacing.threeX
     
 }

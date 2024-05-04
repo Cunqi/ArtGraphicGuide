@@ -1,5 +1,5 @@
 //
-//  AGGSpacing.swift
+//  ARTSpacing.swift
 //  
 //
 //  Created by Cunqi Xiao on 12/16/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AGGSpacing {
+public class ARTSpacing {
     
     public static let quarterX = 2.0
     
