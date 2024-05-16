@@ -45,4 +45,10 @@ public extension Color {
     static let secondarySystemFill: Color = .init(uiColor: .secondarySystemFill)
     static let tertiarySystemFill: Color = .init(uiColor: .tertiarySystemFill)
     static let quaternarySystemFill: Color = .init(uiColor: .quaternarySystemFill)
+
+    // MARK: - Custom colors
+
+    static let systemGreen50: Color = .systemGreen.opacity(0.5)
+
+    static let systemGreen75: Color = .systemGreen.opacity(0.75)
 }
