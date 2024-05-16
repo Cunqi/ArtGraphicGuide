@@ -16,10 +16,10 @@ public extension UIEdgeInsets {
     /// For example, [1, 2] means (top = 1, leading = 2, bottom = 0, trailing = 0)
     /// - Parameter edges: values of edges
     init(with edges: [CGFloat]) {
-        let top = edges[agg_safe: 0] ?? 0
-        let left = edges[agg_safe: 1] ?? 0
-        let bottom = edges[agg_safe: 2] ?? 0
-        let right = edges[agg_safe: 3] ?? 0
+        let top = edges[optional: 0] ?? 0
+        let left = edges[optional: 1] ?? 0
+        let bottom = edges[optional: 2] ?? 0
+        let right = edges[optional: 3] ?? 0
         self.init(top: top, left: left, bottom: bottom, right: right)
     }
     
